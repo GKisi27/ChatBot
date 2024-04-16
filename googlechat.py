@@ -8,7 +8,7 @@ genai.configure(api_key="AIzaSyBeU7sw-qYqngDzQRoPtO1BTAVBVkoupAU")
 model=genai.GenerativeModel("gemini-pro") 
 chat = model.start_chat(history=[])
 def get_gemini_response(question):
-    
+    #Response from google server
     response=chat.send_message(question,stream=True)
     return response
 
